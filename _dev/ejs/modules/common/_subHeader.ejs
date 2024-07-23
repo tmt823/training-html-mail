@@ -1,0 +1,36 @@
+<table border="0" cellpadding="0" cellspacing="0" width="800" style="text-align: center">
+  <tbody>
+    <tr>
+      <td>
+        <% if (topBorder) { %>
+          <div>
+            <img src="./images/mailmag_20210903_title_underline.png" alt="" border="0" hspace="0" vspace="0" width="800" height="10">
+          </div>
+          <%- include('_separator', {height: 35}) %>
+        <% } %>
+        <% if (mainTitle != 0) { %>
+          <div style="
+              font-size: 24px;
+              letter-spacing: 0.06em;
+              font-family: メイリオ, Meiryo, Arial, sans-serif;
+              font-weight: bold;
+              color: #000;
+            ">
+            <%= mainTitle %>
+          </div>
+        <% } %>
+        <% if (sender.length != 0) { %>
+          <%- include('_separator', {height: 13}) %>
+          <div style="
+              font-size: 20px;
+              letter-spacing: 1;
+              font-family: メイリオ, Meiryo, Arial, sans-serif;
+              color: #000;
+            ">
+            <%= sender %>
+          </div>
+        <% } %>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,36 @@
+<%_
+  fontStyle = (size, position = 'left') => {
+    return `
+      font-family: メイリオ, Meiryo, Arial, sans-serif;
+      font-size: ${size}px;
+      line-height: 1.7;
+      color: #000;
+      text-align: ${position};
+    `;
+  };
+
+  titleFontStyle = (size) => {
+    return `
+      font-family: メイリオ, Meiryo, Arial, sans-serif;
+      font-size: ${size}px;
+      line-height: 1;
+      color: #1690D1;
+      font-weight: bold;
+      text-align: left;
+    `;
+  };
+
+  linkStyle = (size) => {
+    return `
+      display: block;
+      font-family: メイリオ, Meiryo, Arial, sans-serif;
+      font-size: ${size}px;
+      line-height: 1;
+      color: #000000;
+      font-weight: bold;
+      text-align: left;
+      text-decoration: none;
+    `;
+  }
+
+_%>
