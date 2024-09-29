@@ -1,9 +1,15 @@
 <% var newMailList = [
   {
-    "data" : "template",
+  "data" : "01",
   },
   {
-  "data" : "01",
+  "data" : "02",
+  },
+  {
+  "data" : "03",
+  },
+  {
+  "data" : "04",
   }
 ]; %>
 
@@ -12,7 +18,7 @@
   <%- include('./modules/common/_head') %>
   <body>
     <main>
-      <h1>HTMLメール一覧</h1>
+      <h1>お題一覧</h1>
       <ul>
         <% for (var item of newMailList) { %>
           <li>
